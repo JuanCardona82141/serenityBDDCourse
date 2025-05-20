@@ -22,13 +22,13 @@ apply plugin: 'net.serenity-bdd.aggregator'
 apply from: "$rootDir/gradle/libraries.gradle"
 
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sourceCompatibility = JavaVersion.VERSION_22
+targetCompatibility = JavaVersion.VERSION_22
 
 dependencies {
-    compile libs.logback
+    implementation libs.logback
 
-    testCompile libs.test.serenity.core,
+    testImplementation libs.test.serenity.core,
             libs.test.serenity.screenplay,
             libs.test.serenity.screenplayWebdriver,
             libs.test.serenity.junit,

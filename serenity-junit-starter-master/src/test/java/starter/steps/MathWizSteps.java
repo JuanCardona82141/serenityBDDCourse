@@ -4,7 +4,7 @@ import net.thucydides.core.annotations.Step;
 
 public class MathWizSteps {
 
-    String actor;
+   String actor;
 
     @Step("#actor tiene {0}")
     public void tiene(int amount) {
